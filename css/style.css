@@ -1,0 +1,593 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 255, 255);
+      background-size: cover;
+      text-align: center;
+}
+
+header{
+      color: red;
+      text-align: center;
+      flex: 30px;
+      margin-bottom: 30px;
+      padding: 2px;
+}
+
+/*    K E Y F R A M E  L O G O   
+                 DEL 
+             INDEX.HTML */
+
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+@keyframes scale-in-hor-center {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
+.nav__responsive-ul1{
+      display: none;
+      background-color: gray;
+      color: white;
+}
+
+.navnav {
+      background-color: red;
+}
+
+.nav__li {
+      display: inline-block;
+      padding: 15px;
+}
+
+.nav__li:hover > a {
+      color: rgb(255, 174, 0) ;
+}
+
+.nav__li a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+}
+
+/* CSS INDEX */
+
+.main__Foto{
+      width: 100%;
+      display: grid;
+      margin: 70px 10px 10px 10px;
+      grid-template-columns: "2fr, 1fr" ;
+      grid-template-rows: "2fr, 1fr";
+      grid-template-areas: 
+      "foto1 foto2"
+      "titulo1 titulo2" 
+      "foto3 foto4"
+      "titulo3 titulo4";
+      grid-gap: 50px;
+}
+
+.main__Foto img{
+      margin-left: 0px;
+}
+
+.foto1{
+      width: 610px;
+      align-items: center;
+      grid-area: foto1;
+}
+
+.titulo1{
+      font-size: 25px;
+      box-sizing: border-box;
+      background-color: red;
+      border-radius: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      grid-area: titulo1;
+      text-align: center;
+      text-decoration: none;
+}
+
+.foto2{
+      width: 610px;
+      grid-area: foto2;
+}
+
+.titulo2{
+      font-size: 25px;
+      box-sizing: border-box;
+      background-color: red;
+      border-radius: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      grid-area: titulo2;
+      text-align: center;
+      text-decoration: none;
+}
+
+
+.foto3{
+      width: 610px;
+      grid-area: foto3;
+}
+
+.titulo3{
+      font-size: 25px;
+      box-sizing: border-box;
+      background-color: red;
+      border-radius: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      grid-area: titulo3;
+      text-align: center;
+      text-decoration: none;
+}
+
+.foto4{
+      width: 610px;
+      grid-area: foto4;
+}
+
+.titulo4{
+      font-size: 25px;
+      box-sizing: border-box;
+      background-color: red;
+      border-radius: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: white;
+      grid-area: titulo4;
+      text-align: center;
+      text-decoration: none;
+}
+
+/* CSS PLANES */
+
+.mainPlanes{
+      background-color: white;
+      color: black;
+}
+
+.mainPlanes h1{
+      margin: 1.75rem;
+      box-sizing: content-box;
+      color: black;
+}
+
+.pdelplanes {
+      margin: 1.75rem;
+      font-size: 25px;
+}
+
+.tracking-in-contract-bck {
+-webkit-animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+/* CSS ACTIVIDADES */
+
+.h1yp h1{
+      margin: 1.25rem;
+}
+
+.h1yp p{
+      margin: 1.25rem;
+}
+
+.ACTIVIDADES{
+      background-color: white;
+      color: black;
+      text-decoration: double;
+}
+
+.videitoActividades {
+      height: 480px;
+      margin: 1.25rem;
+}
+
+  /* CSS SEDES */
+
+.mainSede h1{
+      margin: 1.75rem;
+}
+.mapaSede1{
+      margin: 1.75rem;
+}
+
+.mapaSedes{
+      margin: 1.75rem;
+      color: black;
+}
+  
+
+/* CSS QUIENES SOMOS */
+
+.Quienes h1{
+      margin: 1.75rem;
+      color: black;
+}
+
+.quienesP{
+      margin: 1.75rem;
+}
+
+
+/* CSS  CONTACTO  */
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+  }
+  40% {
+        opacity: 0.6;
+  }
+  100% {
+        opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+  }
+  40% {
+        opacity: 0.6;
+  }
+  100% {
+        opacity: 1;
+  }
+}
+
+.tracking-in-expand h1{
+      margin: 1.75rem;
+      background-color: white;
+      color: black;
+      text-decoration: double;
+}
+
+.formConta form{
+      box-sizing: border-box;
+      border-style: inset;
+      background-color: grey;
+      color: black;
+      text-decoration: underline;
+}
+
+/*
+   F 
+     O
+        O 
+          T 
+            E 
+              R
+              CSS   
+                */
+
+footer{
+      width: 100%;
+      margin-top: 1rem;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 0, 0);
+      color: white;
+      text-align: center;
+      font-size: 10px;
+}
+
+
+/* CODIGO 
+       RESPONSIVE  
+             INDEX */
+
+ 
+@media only screen and (max-width: 480px){
+
+/* INDEX.HTML RESPONSIVE */     
+
+body{
+      background-color: gray;
+      text-align: center;
+}
+
+.navnav{
+      width: 100%;
+}
+        
+.logoSize{
+      height: auto;
+      width: 100%;
+}
+
+.nav__ul1 {
+      display: none;
+}
+
+.nav__responsive-ul1 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: black; 
+}
+
+.nav__responsive-li a {
+      color:rgb(255, 174, 0);
+      text-decoration: none;      
+}
+
+.nav {
+      height: 35px;
+      width: 100%;
+}
+
+.main__Foto{
+      width: 50%;
+      display: grid;
+      margin: 110px 10px 10px 30px;
+      grid-template-columns: "2fr 1fr" ;
+      grid-template-rows: "2fr 1fr";
+      grid-template-areas: 
+      "foto1 foto2"
+      "titulo1 titulo2" 
+      "foto3 foto4"
+      "titulo3 titulo4";
+      grid-gap: 10px;
+}  
+
+.foto1{
+      width: 210px;
+      grid-area: foto1;
+}
+            
+.titulo1{
+      box-sizing: border-box;
+      border-radius: 30px;
+      background-color: black;
+      font-size: 1rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(255, 174, 0);
+      grid-area: titulo1;
+      text-align: center;
+      text-decoration: none;
+}          
+
+.foto2{
+      width: 210px;
+      grid-area: foto2;
+}
+            
+.titulo2{
+      box-sizing: border-box;
+      border-radius: 30px;
+      background-color: black;
+      font-size: 1rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(255, 174, 0);
+      grid-area: titulo2;
+      text-align: center;
+      text-decoration: none;
+}
+            
+.foto3{
+      width: 210px;
+      grid-area: foto3;
+}
+    
+.titulo3{
+      box-sizing: border-box;
+      border-radius: 30px;
+      background-color: black;
+      font-size: 1rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(255, 174, 0);
+      grid-area: titulo3;
+      text-align: center;
+      text-decoration: none;
+}
+    
+.foto4{
+      width: 210px;
+      grid-area: foto4;
+}
+  
+.titulo4{
+      box-sizing: border-box;
+      border-radius: 30px;
+      background-color: black;
+      font-size: 1rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(255, 174, 0);
+      grid-area: titulo4;
+      text-align: center;
+      text-decoration: none;
+}
+
+footer{
+      width: 100%;
+      padding-top: 10px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(26, 26, 26);
+      color: rgb(255, 174, 0);
+      position: static;
+      text-align: center;
+      font-size: 9px;
+}    
+
+
+/* ACTIVIDADES.HTML RESPONSIVE */
+
+.mainActividades{
+      box-sizing: border-box;
+      padding: 0;
+      margin-top: 100px;
+}
+
+
+.h1yp{
+      background-color: rgb(255, 174, 0);
+      margin-top: 125px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1rem;
+      align-items: center;
+}
+
+.h1yp h1{
+      display: none;
+}
+
+.videitoActividades video{
+      box-sizing: border-box;
+      max-width: 30rem;
+      max-height: 20rem;
+      margin:10px 1px 1px -20px;
+}
+
+/* PLANES.HTML RESPONSIVE */
+
+.mainPlanes{
+      width: auto;
+      margin-top: 150px;
+
+}
+
+.mainPlanes h1{
+      display: none;
+      font-size: 2rem;
+}
+.divPlanes{
+      background-color: gray;
+}
+
+.mainPlanes p{
+      background-color: rgb(255, 166, 0);
+      font-size: 1rem;
+}
+
+
+/* SEDES R E S P O N S I V E */
+
+.mapaSedes{
+      background-color: red;
+      color: white;
+      font-size: 1.7rem;
+}
+
+
+iframe {
+      box-sizing: border-box;
+      width: 95%;
+      height: auto;
+      padding: 100px 10px 10px 10px;
+}
+
+
+/* QUIENES SOMOS .HTML RESPONSIVE */
+
+.Quienes{
+      display: flex;
+      width: 100%;
+}
+
+.Quienes h1{
+      display: none;
+}
+
+.quienesP{
+
+      display: flex;
+      margin-top: 115px;
+      width: 100%;
+      background-color: rgb(255, 166, 0);
+      font-size: 1rem;
+}
+
+
+/* CONTACTO.HTML RESPONSIVE */
+
+
+.tracking-in-expand h1{
+      display: none;
+}
+
+.contactmain{
+      padding: 100px;
+}
+
+fieldset{
+      box-sizing: border-box;
+      border: 2px solid;
+      font-size: 15px;
+      padding: 50px 1px 1px 1px;
+      width: 75%;
+      background-color: rgb(255, 166, 0);
+}
+}
+
